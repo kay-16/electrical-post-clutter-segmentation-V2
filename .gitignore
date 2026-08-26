@@ -1,0 +1,12 @@
+# Environments
+.env/
+venv/
+env/
+
+# Data & Models
+datasets/
+*.pt
+*.onnx
+runs/
+__pycache__/
+.ipynb_checkpoints/
