@@ -40,17 +40,6 @@ Therefore, this project aims to develop a deep learning- based system that analy
 
 ![Problem Demo](images/problem_example.gif)[web:41]
 
-## Related Work
-- <div class="csl-entry">Kim, J., Kamari, M., Lee, S., &#38; Ham, Y. (2021). Large-Scale Visual Data–Driven Probabilistic Risk Assessment of Utility Poles Regarding the Vulnerability of Power Distribution Infrastructure Systems. <i>Journal of Construction Engineering and Management-Asce</i>, <i>147</i>(10), 04021121. https://doi.org/10.1061/(ASCE)CO.1943-7862.0002153</div>
-
-- <div class="csl-entry">Benelmostafa, B.-E., &#38; Medromi, H. (2025). PowerLine-MTYOLO: A Multitask YOLO Model for Simultaneous Cable Segmentation and Broken Strand Detection. <i>Drones</i>, <i>9</i>(7), 505. https://doi.org/10.3390/drones9070505</div>
-
-- Gap addressed:  
-    * The Two-Stage Risk Assessment Pipeline - While other works use two stages to find a component and then classify its defect type, my pipeline is designed for abstract risk assessment using EfficientNetB0 (for classification) and YOLOv8n (for detection)
-
-    * The dataset and target - By detecting formless, tangled wire clusters rather than distinct, standardized hardware components (like insulators, dampeners, or towers)
-[web:25]
-
 ## Methodology
 ### Dataset
 - Source: Custom Dataset of Electrical Posts collected via web scraping, open-source repositories, Google Maps, Kartaview, and original photography of urban electrical posts
@@ -58,19 +47,17 @@ Therefore, this project aims to develop a deep learning- based system that analy
 - Size: Approximately 600-800 images 
 
 - Split: 70% Train, 15% Validation, 15% Test.
-    * Train: ~205 images (Original) -> ~1400 (Augmented)
-    * Validation: ~75 images
-    * Test: ~75 images
+    * Train: ~ -> ~ (Augmented)
+    * Validation: ~ images
+    * Test: ~ images
 
 - Preprocessing: 
 
 ### Architecture
-![Model Diagram](csc173-deepcv-final-proj/images/cv_architecture_diagram.png)
-- Backbone: EfficientNet-B0
 - Head: Custom Classification Head
 - Hyperparameters: Table below
 
-| Parameter | YOLOv8n (Detection) | EfficientNet-B0 (Phase 1) | EfficientNet-B0 (Phase 2) |
+| Parameter | YOLOv8n |
 |-----------|-------| -------| -------|
 | Batch Size | - | - | - |
 | Learning Rate | - | - | - |
@@ -91,10 +78,10 @@ Therefore, this project aims to develop a deep learning- based system that analy
 
 
 ### Demo
-Video Demo: https://drive.google.com/drive/folders/1OCeNwBQlvovNFA2rdbr0W-rqcMrWEhRS?usp=sharing [web:41]
+Video Demo:[web:41]
 
 ## Discussion
-- Strengths: 
+- 
     
 
 ## Ethical Considerations
@@ -103,7 +90,7 @@ Video Demo: https://drive.google.com/drive/folders/1OCeNwBQlvovNFA2rdbr0W-rqcMrW
 - Misuse: Potential application for automated infrastructure inspection, which, if repurposed without consent, could raise surveillance or property rights issues [web:41]
 
 ## Conclusion
-
+-
 
 ## Installation
 1. Clone repo: `git clone https://github.com/kay-16/electrical-post-clutter-segmentation-V2.git`
@@ -115,6 +102,20 @@ torch>=2.0
 ultralytics
 opencv-python
 albumentations
+
+
+## Related Work
+- <div class="csl-entry">Kim, J., Kamari, M., Lee, S., &#38; Ham, Y. (2021). Large-Scale Visual Data–Driven Probabilistic Risk Assessment of Utility Poles Regarding the Vulnerability of Power Distribution Infrastructure Systems. <i>Journal of Construction Engineering and Management-Asce</i>, <i>147</i>(10), 04021121. https://doi.org/10.1061/(ASCE)CO.1943-7862.0002153</div>
+
+- <div class="csl-entry">Benelmostafa, B.-E., &#38; Medromi, H. (2025). PowerLine-MTYOLO: A Multitask YOLO Model for Simultaneous Cable Segmentation and Broken Strand Detection. <i>Drones</i>, <i>9</i>(7), 505. https://doi.org/10.3390/drones9070505</div>
+
+- Gap addressed:  
+    * The Two-Stage Risk Assessment Pipeline - While other works use two stages to find a component and then classify its defect type, my pipeline is designed for abstract risk assessment using EfficientNetB0 (for classification) and YOLOv8n (for detection)
+
+    * The dataset and target - By detecting formless, tangled wire clusters rather than distinct, standardized hardware components (like insulators, dampeners, or towers)
+[web:25]
+
+
 
 ## References
 [1] <div class="csl-entry">Kim, J., Kamari, M., Lee, S., &#38; Ham, Y. (2021). Large-Scale Visual Data–Driven Probabilistic Risk Assessment of Utility Poles Regarding the Vulnerability of Power Distribution Infrastructure Systems. <i>Journal of Construction Engineering and Management-Asce</i>, <i>147</i>(10), 04021121. https://doi.org/10.1061/(ASCE)CO.1943-7862.0002153</div>
