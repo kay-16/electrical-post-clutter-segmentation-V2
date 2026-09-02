@@ -58,11 +58,11 @@ Therefore, this project aims to develop a deep learning- based system that analy
 - Hyperparameters: Table below
 
 | Parameter | YOLOv8n |
-|-----------|-------| -------| -------|
-| Batch Size | - | - | - |
-| Learning Rate | - | - | - |
-| Epochs | 50 (stopped at -) | - | - |
-| Optimizer | AdamW | Adam | Adam |
+|-----------|-------| 
+| Batch Size | - | 
+| Learning Rate | - | 
+| Epochs | 50 (stopped at -) |
+| Optimizer | AdamW | 
 
 ### Training Code Snippet
 **YOLOv8 Detection Training**
@@ -98,10 +98,10 @@ Video Demo:[web:41]
 3. Download weights: Run `download_weights.sh` [web:22][web:25]
 
 **requirements.txt:**
-torch>=2.0
-ultralytics
-opencv-python
-albumentations
+- torch>=2.0
+- ultralytics
+- opencv-python
+- albumentations
 
 
 ## Related Work
