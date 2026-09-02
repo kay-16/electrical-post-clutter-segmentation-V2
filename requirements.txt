@@ -1,0 +1,6 @@
+# COMPUTER VISION
+
+torch>=2.0
+ultralytics
+opencv-python
+albumentations
