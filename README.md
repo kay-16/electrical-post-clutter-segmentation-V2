@@ -123,4 +123,4 @@ Video Demo:[web:41]
 [2] <div class="csl-entry">Benelmostafa, B.-E., &#38; Medromi, H. (2025). PowerLine-MTYOLO: A Multitask YOLO Model for Simultaneous Cable Segmentation and Broken Strand Detection. <i>Drones</i>, <i>9</i>(7), 505. https://doi.org/10.3390/drones9070505</div> [web:25]
 
 ## GitHub Pages
-View this project site: https://kay-16.github.io/CSC173-DeepCV-Reambonanza/ [web:32]
+View project site at: https://kay-16.github.io/electrical-post-clutter-segmentation-V2/ [web:32]
