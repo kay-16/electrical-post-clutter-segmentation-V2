@@ -10,3 +10,11 @@ datasets/
 runs/
 __pycache__/
 .ipynb_checkpoints/
+
+# Ignore local dataset images and processed splits
+src/dataset/raw/
+src/dataset/processed/
+
+# Ignore YOLO training artifacts and weights
+runs/
+*.pt
