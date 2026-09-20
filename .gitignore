@@ -18,3 +18,13 @@ src/dataset/processed/
 # Ignore YOLO training artifacts and weights
 runs/
 *.pt
+
+# Raw download and processed YOLO splits
+raw_coco_dataset/
+dataset/
+temp_yolo_labels/
+*.zip
+
+# Generated sample images / outputs
+clutter_assessment_sample.jpg
+inference_outputs/
